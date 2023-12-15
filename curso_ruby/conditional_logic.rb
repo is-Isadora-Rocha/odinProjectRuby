@@ -114,8 +114,18 @@ else
     fml = true
 end
 
-# charada do pinóquino 
 
+puts "Onde está o Shrek?"
+pergunta = "Eu não sei onde ele provalvelmente não está"
+
+case pergunta
+when 'Eu não sei onde ele provalvelmente não está'
+    puts "Pinóquio falou a verdade"
+else 'Eu não sei aonde ele está'
+    puts "Nariz de Pinóquio cresceu"
+end
+
+puts pergunta
 
 
 

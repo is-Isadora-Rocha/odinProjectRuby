@@ -34,7 +34,7 @@ end
 
 # continua enquanto a condição for verdadeira 
 # pode ser usada para fazer pergunta repetidamente ao usuário até que ele dê a resposta desejada: 
-
+puts "say 'yes'!"
 while gets.chomp != "yes" do
     puts "Are we there yet?"
 end 
@@ -57,9 +57,30 @@ until i >= 10 do
 end 
 
 # usar until significa que o loop continuará em execução até que a condição i >= 10 seja verdadeira.
-
+puts "say 'yes'!"
 until gets.chomp == "yes" do
     puts "Do you like Pizza?"
+end
+
+
+
+# RANGES - GAMAS - INTERVALO
+# Definir quantas vezes queremos que o nosso loop seja executado.
+# Fornecer o valor inicial, o valor final e se queremos que o intervalo seja inclusivo ou exclusivo.
+
+(1..5) #inclusivo 1,2,3,4,5
+(1...5) #exclusivo 1,2,3,4
+
+# Pode-se fazer intervalos com letras também 
+('a'..'d') # a,b,c,d
+
+
+# FOR - PARA LOOP 
+# É usado para iterar por uma coleção de informações - array ou intervalo(ranges)
+# úteis se você precisar fazer um determinado número de vezes enquanto usa um iterador. 
+
+for i in 0..5
+    puts "#{i} zombies incoming!"
 end
 
 
