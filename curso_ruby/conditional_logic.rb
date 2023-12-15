@@ -154,5 +154,21 @@ end
 
 
 
-# OPERADOR TERNÁRIO 
 
+# OPERADOR TERNÁRIO 
+# é uma instrução de uma linha if...else 
+# conditional statement ? <execute if true> : <execute if false>
+
+age = 19
+response = age < 18 ? "Jovem aprendiz" : "Carteira CLT"
+puts response
+
+# com if-else 
+age = 19
+if age < 18
+    response = "Jovem aprendiz"
+else 
+    response = "Carteira CLT"
+end 
+
+puts response
