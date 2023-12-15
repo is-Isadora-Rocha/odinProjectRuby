@@ -66,6 +66,10 @@ end
 #if !false 
 #if !(10 < 5) 
 
+
+
+
+
 # DECLARAÇÕES DE CASO 
 # Case = maneira elegante de escrever diversas expressões condicionais.
 # Pode atribuit o valor de retorno de uma instrução case a uma variável para uso posterior.
@@ -93,7 +97,62 @@ end
 
 puts a_gente_ja_chegou
 
+# Se precisar fazer alguma manipulação mais complexa
+# pode remover a palavra "then" e colocar para ser executado na próxima linha
+
+grade = 'A'
+
+case grade
+when 'A'
+    puts "You're a genius!"
+    future_bank_account_balance = 5_000_000
+when 'D'
+    puts "Better luck next time"
+    can_i_retire_soon = false
+else
+    puts "'YOU SHALL NOT PASS!' -Gandalf"
+    fml = true
+end
+
+# charada do pinóquino 
 
 
 
+
+# A MENOS QUE DECLARAÇÕES 
+# unless = oposto da instruções if: ela só processa o código no bloco se a expressão 
+# for avaliada como FALSE. 
+
+age = 19
+unless age < 18
+    puts "Get a job."
+end
+
+fruta = "Banana"
+unless fruta == "Banana prata"
+    puts "É true que as duas são diferentes" # false 
+end 
+
+fruta2 = "Maçã"
+unless fruta2 == "Maçã"
+    puts "Sim, é uma maçã" # true => as duas são iguais
+end 
+
+# Assim como acontece com as instruções if, 
+# você pode escrever uma instrução unless simples em uma linha e também pode adicionar um else cláusula.
+
+age = 19
+puts "Welcome to a life of debt" unless age < 18
+
+unless age < 18
+    puts "Down with that sort of thing"
+else 
+    puts "Careful now!"
+end 
+
+# Você deve usar uma instrução unless quando quiser não fazer algo se uma condição for .true, porque pode tornar seu código mais legível do que usar if !true
+
+
+
+# OPERADOR TERNÁRIO 
 
