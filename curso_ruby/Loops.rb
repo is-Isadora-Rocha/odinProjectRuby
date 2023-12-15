@@ -32,3 +32,34 @@ while i < 10 do
     i += 1
 end
 
+# continua enquanto a condição for verdadeira 
+# pode ser usada para fazer pergunta repetidamente ao usuário até que ele dê a resposta desejada: 
+
+while gets.chomp != "yes" do
+    puts "Are we there yet?"
+end 
+
+# ele será executado até que sua condição de interrupção seja atendida, o que pode ser para um número variável de loops 
+# ou para um número de loops que seja inicialmente desconhecido.
+
+
+
+
+
+# UNTIL ATÉ O LOOP
+# oposto do loop while. 
+# Continua enquanto a condição for falsa. 
+
+i = 0
+until i >= 10 do
+    puts "i is #{i}"
+    i += 1
+end 
+
+# usar until significa que o loop continuará em execução até que a condição i >= 10 seja verdadeira.
+
+until gets.chomp == "yes" do
+    puts "Do you like Pizza?"
+end
+
+
