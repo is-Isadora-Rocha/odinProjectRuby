@@ -22,4 +22,6 @@ Array.new(3, true)   #=> [true, true, true]
 str_array = ["This", "is", "war"]
 str_array[0]
 str_array[1]
-str_array[]
+str_array[-1]
+
+# Ruby também permite o uso de índices negativos, que retornam elementos começando no fim de um array, começando em [-1].
