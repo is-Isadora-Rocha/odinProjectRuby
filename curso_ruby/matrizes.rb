@@ -39,8 +39,8 @@ str_array.last(2)       #=> ["small", "array"]
 puts "Acessando small array: #{str_array}"
 
 #ADICIONANDO E REMOVENDO ELEMENTOS 
-# push ou << para adicionar
-# pop removerá o elemento no final de um array e retornará o que foi removido
+# PUSH ou << para adicionar
+# POP removerá o elemento no FINAL de um array e retornará o que foi removido
 
 num_array = [1,2]
 num_array.push(3,4)
@@ -51,7 +51,47 @@ num_array.pop
 num_array
 puts "Removendo com pop: #{num_array}"
 
+# SHIFT e UNSHIFT são usados para add e remover elementos no INÍCIO de um array
+# SHIFT remove o promeiro elemento do array
 
+num_array = [2,3,4]
+puts "Array: #{num_array}"
+num_array.unshift(1)      #=> [1, 2, 3, 4]
+puts "Adicionado primeiro elemento: #{num_array}"
+num_array.shift           #=> 1
+puts "Removendo o primeiro elemento: #{num_array}"
+puts "#{num_array}"                 #=> [2, 3, 4]
+
+
+# Também é útil saber que #pop e #shift podem receber argumentos inteiros:
+num_array = [1, 2, 3, 4, 5, 6]
+
+num_array.pop(3)          #=> [4, 5, 6]
+num_array.shift(2)        #=> [1, 2]
+num_array                 #=> [3]
+
+
+# ADICIONANDO E SUBTRAINDO MATRIZES 
+# [1, 2, 3] + [3, 4, 5]?
+# [1, 2, 3, 3, 4, 5] 
+# semelhante a concatenação de strings, o método CONCAT 
+
+a = [1,2,3]
+b = [3,4,5]
+
+a + b 
+a.concat(b)
+
+puts "#{a}"
+
+# diferença entre matrizes, utilizar " - "
+z = [1, 1, 1, 4, 5, 4, 6, 7, 3] - [1, 4] #=> [5, 6, 7, 3]
+puts "#{z}"
+
+
+
+
+# MÉTODOS BÁSICOS 
 
 
 
