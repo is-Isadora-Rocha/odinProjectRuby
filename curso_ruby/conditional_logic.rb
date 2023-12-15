@@ -52,7 +52,7 @@ end
 # Com o operador ||, se a primeira expressão for avaliada como true, a segunda expressão nunca será verificada porque a expressão completa já é true, e o código no bloco é executado.
 
 if 10 < 2 || 5 < 6 #=> a expressão da direita é true, então haverá festa
-    puts "Party at Kevin's!"
+    puts "Party at Kevin's yet!"
 end
 
 # também pode ser escrito assim: 
@@ -76,18 +76,18 @@ end
 grade = 'F'
 
 did_i_pass = case grade
-    when 'A' then "Hello yeah!"
+    when 'A' then "Hell yeah!"
     when 'D' then "Don't tell your mother."
-    else "'YOU SHALL NOT PASS!' -Gandalf" #print
+    else "'YOU SHALL NOT PASS!' -Gandalf" #puts
 end
 
-puts did_i_pass
+puts did_i_pass 
 
 destino = 'tão tão distante'
 
 a_gente_ja_chegou = case destino
     when 'Pântano' then "Não!"
-    when 'tão tão distante' then "JÁ!!"
+    when 'tão tão distante' then "JÁ!!" #puts
     else "Cala a boca, Burro!"
 end
 
