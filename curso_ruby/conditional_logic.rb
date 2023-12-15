@@ -60,5 +60,40 @@ if 1 < 2 or 5 < 6
     puts "Party at Kevin's!"
 end
 
+# Operador ! inverte a lógica da expressão.
+
+# TRUE
+#if !false 
+#if !(10 < 5) 
+
+# DECLARAÇÕES DE CASO 
+# Case = maneira elegante de escrever diversas expressões condicionais.
+# Pode atribuit o valor de retorno de uma instrução case a uma variável para uso posterior.
+
+# As instruções Case processam cada condição por vez e, se a condição retornar false, 
+# ela passará para a próxima até que uma correspondência seja encontrada. Uma cláusula else pode ser fornecida para servir como padrão se nenhuma correspondência for encontrada.
+
+grade = 'F'
+
+did_i_pass = case grade
+    when 'A' then "Hello yeah!"
+    when 'D' then "Don't tell your mother."
+    else "'YOU SHALL NOT PASS!' -Gandalf" #print
+end
+
+puts did_i_pass
+
+destino = 'tão tão distante'
+
+a_gente_ja_chegou = case destino
+    when 'Pântano' then "Não!"
+    when 'tão tão distante' then "JÁ!!"
+    else "Cala a boca, Burro!"
+end
+
+puts a_gente_ja_chegou
+
+
+
 
 
